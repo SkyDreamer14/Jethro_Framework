@@ -21,33 +21,33 @@ The paper presents a hybrid inference approach that combines large and small lan
 *Keyword: Cost Efficiency*  
 The paper addresses the challenges posed by the increasing size of LLMs, which require substantial computational resources and incur high costs for deployment. The need for cost-effective solutions that do not compromise on quality is emphasized.
 
-2-1) **Related Work**:  
-*Keyword: Previous Research*  
-The advent of LLMs has transformed various fields, but their large sizes lead to significant resource demands. Previous studies have explored smaller models, but they often lag in response quality compared to larger counterparts.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2-1) **Related Work**:  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Keyword: Previous Research*  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The advent of LLMs has transformed various fields, but their large sizes lead to significant resource demands. Previous studies have explored smaller models, but they often lag in response quality compared to larger counterparts.
 
-2-2) **Problem Setting**:  
-*Keyword: Query Routing*  
-The problem is framed around the need to efficiently route queries to either small or large models based on their complexity, aiming to balance cost and quality in LLM deployments.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2-2) **Problem Setting**:  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Keyword: Query Routing*  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The problem is framed around the need to efficiently route queries to either small or large models based on their complexity, aiming to balance cost and quality in LLM deployments.
 
-2-3) **Evaluation Metric**:  
-*Keyword: Performance Measurement*  
-The evaluation metrics include BART scores and human assessments to measure response quality, alongside cost advantages achieved through routing strategies.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-3) **Evaluation Metric**:  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Keyword: Performance Measurement*  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The evaluation metrics include BART scores and human assessments to measure response quality, alongside cost advantages achieved through routing strategies.
 
 3) **Hybrid Inference**:  
 *Keyword: Model Combination*  
 The proposed hybrid inference method leverages a router to optimize the selection of models based on query difficulty.
 
-3-1) **Deterministic Router**:  
-*Keyword: Rule-Based Routing*  
-This router assigns queries based on deterministic rules, using a binary classification approach to decide which model to use for each query.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-1) **Deterministic Router**:  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Keyword: Rule-Based Routing*  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This router assigns queries based on deterministic rules, using a binary classification approach to decide which model to use for each query.
 
-3-2) **Probabilistic Router**:  
-*Keyword: Flexible Routing*  
-This router employs a probabilistic approach to assign queries, allowing for more flexible and nuanced routing decisions based on the inherent uncertainty in natural language processing tasks.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-2) **Probabilistic Router**:  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Keyword: Flexible Routing*  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This router employs a probabilistic approach to assign queries, allowing for more flexible and nuanced routing decisions based on the inherent uncertainty in natural language processing tasks.
 
-3-3) **Probabilistic Router with Data Transformation**:  
-*Keyword: Enhanced Routing*  
-This variant enhances routing effectiveness by transforming query data, which helps in better distinguishing between easy and hard queries, thereby improving overall routing performance.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-3) **Probabilistic Router with Data Transformation**:  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Keyword: Enhanced Routing*  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This variant enhances routing effectiveness by transforming query data, which helps in better distinguishing between easy and hard queries, thereby improving overall routing performance.
 
 4) **Evaluation**:  
 *Keyword: Experimental Results*  
